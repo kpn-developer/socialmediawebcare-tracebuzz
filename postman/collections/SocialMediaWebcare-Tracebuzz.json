@@ -1,0 +1,5517 @@
+{
+	"info": {
+		"_postman_id": "a934fb41-5aaf-4ae1-8df1-0a247119ff95",
+		"name": "SocialMediaWebcare-Tracebuzz",
+		"description": "The SocialMediaWebcare API allows you to organise and manage your inbound and outbound social media channels traffic.\n\n### Key highlights\n\n  - **Security:**  HTTPS, Oauth, Rate limit\n\n  - **Versioning:**  supports version-less API, version tight. If no version\n  is provided (in header) it defaults to latest version. \n\n\n## Getting Started\n\n\n---\n\n## [KPN Developer](https://developer.kpn.com/)<br/>\n[Getting Started](https://developer.kpn.com/getting-started)\n\n ---\n\n\nContact Support:\n Name: API Support\n Email: api_developer@kpn.com",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "4406147-a934fb41-5aaf-4ae1-8df1-0a247119ff95"
+	},
+	"item": [
+		{
+			"name": "searches",
+			"item": [
+				{
+					"name": "{searchId}",
+					"item": [
+						{
+							"name": "cases",
+							"item": [
+								{
+									"name": "{caseId}",
+									"item": [
+										{
+											"name": "releaseHandler",
+											"item": [
+												{
+													"name": "Releases handler from case",
+													"id": "b9b81134-8178-4098-ad89-b5d8b6700a6a",
+													"protocolProfileBehavior": {
+														"disableBodyPruning": true
+													},
+													"request": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"searches",
+																":searchId",
+																"cases",
+																":caseId",
+																"releaseHandler"
+															],
+															"variable": [
+																{
+																	"key": "searchId",
+																	"value": "{{cases.searchId}}"
+																},
+																{
+																	"key": "caseId",
+																	"value": "{{cases.caseId}}"
+																}
+															]
+														},
+														"description": "This method let's you release the case."
+													},
+													"response": [
+														{
+															"id": "544ea5a6-3f7e-41fa-9bd4-4f91171f4366",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "OK",
+															"code": 200,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"post\",\n    \"duration\": \"<integer>\"\n  }\n}"
+														},
+														{
+															"id": "4f6d7aa0-5553-4488-aa86-9babc4de5e2a",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Bad Request",
+															"code": 400,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "5221e65a-fe4a-4b4e-a3a0-61b9b51a25da",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Unauthorized",
+															"code": 401,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "0d8ee0e3-702f-4e38-969f-cef33f1d999f",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Forbidden",
+															"code": 403,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "475bda1a-19a3-48f1-a913-efa4612867f8",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Not Found",
+															"code": 404,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "0dbe278d-c8fe-4aa4-9dcf-c08709dbc518",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Method Not Allowed",
+															"code": 405,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "620fc206-549a-4533-a796-6a31f3773f2e",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Precondition Failed",
+															"code": 412,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "575fbd58-17b9-44b1-be66-97632a6d02a5",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Too Many Requests",
+															"code": 429,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "583845cd-6c5f-4cad-86d4-21d5f69221bb",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Internal Server Error",
+															"code": 500,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "aacb20c7-472a-492b-95eb-22d0191e6317",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Bad Gateway",
+															"code": 502,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "65a88f2d-be2f-44e0-a9b4-faec1b6d19d0",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/releaseHandler",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"releaseHandler"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you release the case."
+															},
+															"status": "Service Unavailable",
+															"code": 503,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														}
+													]
+												}
+											],
+											"id": "feeea1dd-4906-43c6-85d3-909ac1b59841"
+										},
+										{
+											"name": "close",
+											"item": [
+												{
+													"name": "handOverToHandler",
+													"item": [
+														{
+															"name": "{handlerId}",
+															"item": [
+																{
+																	"name": "Releases case to another handler",
+																	"id": "dc1f64bb-9626-4108-8116-38714030e679",
+																	"protocolProfileBehavior": {
+																		"disableBodyPruning": true
+																	},
+																	"request": {
+																		"auth": {
+																			"type": "oauth2",
+																			"oauth2": [
+																				{
+																					"key": "accessTokenUrl",
+																					"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																					"type": "string"
+																				},
+																				{
+																					"key": "grant_type",
+																					"value": "client_credentials",
+																					"type": "string"
+																				}
+																			]
+																		},
+																		"method": "POST",
+																		"header": [
+																			{
+																				"key": "Accept",
+																				"value": "application/json"
+																			}
+																		],
+																		"url": {
+																			"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																			"host": [
+																				"{{baseUrl}}"
+																			],
+																			"path": [
+																				"searches",
+																				":searchId",
+																				"cases",
+																				":caseId",
+																				"close",
+																				"handOverToHandler",
+																				":handlerId"
+																			],
+																			"variable": [
+																				{
+																					"key": "searchId",
+																					"value": "{{cases.searchId}}"
+																				},
+																				{
+																					"key": "caseId",
+																					"value": "{{cases.caseId}}"
+																				},
+																				{
+																					"key": "handlerId",
+																					"value": "{{cases.handlerId}}"
+																				}
+																			]
+																		},
+																		"description": "This method let's you assign your case to another handler."
+																	},
+																	"response": [
+																		{
+																			"id": "070e4f4c-0192-4ad6-aac3-4d69c7f62fe6",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "OK",
+																			"code": 200,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"post\",\n    \"duration\": \"<integer>\"\n  }\n}"
+																		},
+																		{
+																			"id": "bdfed543-e257-437c-81c4-f03799ea5b78",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Bad Request",
+																			"code": 400,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "15ef15bf-0287-4d75-b5af-c4a2b734017c",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Unauthorized",
+																			"code": 401,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "27080e99-13f6-4e15-8cc3-e50e41b88c3e",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Forbidden",
+																			"code": 403,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "f3f5ca2d-aaa7-4c8a-9929-1a81d40b23b2",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Not Found",
+																			"code": 404,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "1c65abda-2678-4d9a-8fb9-a19bf6f2ecc4",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Method Not Allowed",
+																			"code": 405,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "3f2c7aae-d559-436c-9d15-c4bef84115c0",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Precondition Failed",
+																			"code": 412,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "81f031f3-008d-4973-8fad-b0b37aa91bca",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Too Many Requests",
+																			"code": 429,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "938a9544-12f1-4fa6-a568-ac9ee643bad4",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Internal Server Error",
+																			"code": 500,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "4761838e-4d3a-41fe-893e-7f45ccc655cb",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Bad Gateway",
+																			"code": 502,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		},
+																		{
+																			"id": "72402f3a-888c-4ebd-9339-d04710caff01",
+																			"name": "Untitled Example",
+																			"originalRequest": {
+																				"auth": {
+																					"type": "oauth2",
+																					"oauth2": [
+																						{
+																							"key": "accessToken",
+																							"type": "any"
+																						},
+																						{
+																							"key": "addTokenTo",
+																							"type": "any"
+																						},
+																						{
+																							"key": "callBackUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "authUrl",
+																							"type": "any"
+																						},
+																						{
+																							"key": "accessTokenUrl",
+																							"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+																							"type": "string"
+																						},
+																						{
+																							"key": "clientId",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientSecret",
+																							"type": "any"
+																						},
+																						{
+																							"key": "clientAuth",
+																							"type": "any"
+																						},
+																						{
+																							"key": "grantType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "scope",
+																							"type": "any"
+																						},
+																						{
+																							"key": "username",
+																							"type": "any"
+																						},
+																						{
+																							"key": "password",
+																							"type": "any"
+																						},
+																						{
+																							"key": "tokenType",
+																							"type": "any"
+																						},
+																						{
+																							"key": "redirectUri",
+																							"type": "any"
+																						},
+																						{
+																							"key": "refreshToken",
+																							"type": "any"
+																						}
+																					]
+																				},
+																				"method": "POST",
+																				"header": [
+																					{
+																						"key": "Accept",
+																						"value": "application/json"
+																					}
+																				],
+																				"url": {
+																					"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close/handOverToHandler/:handlerId",
+																					"host": [
+																						"{{baseUrl}}"
+																					],
+																					"path": [
+																						"searches",
+																						":searchId",
+																						"cases",
+																						":caseId",
+																						"close",
+																						"handOverToHandler",
+																						":handlerId"
+																					],
+																					"variable": [
+																						{
+																							"key": "searchId",
+																							"value": "{{cases.searchId}}"
+																						},
+																						{
+																							"key": "caseId",
+																							"value": "{{cases.caseId}}"
+																						},
+																						{
+																							"key": "handlerId",
+																							"value": "{{cases.handlerId}}"
+																						}
+																					]
+																				},
+																				"description": "This method let's you assign your case to another handler."
+																			},
+																			"status": "Service Unavailable",
+																			"code": 503,
+																			"_postman_previewlanguage": "json",
+																			"header": [
+																				{
+																					"key": "Content-Type",
+																					"value": "application/json"
+																				}
+																			],
+																			"cookie": [],
+																			"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+																		}
+																	]
+																}
+															],
+															"id": "00246578-e266-47fe-a65b-0c0d101b7d09"
+														}
+													],
+													"id": "d2c85bcf-bcc5-45b0-963f-de40f38d2d6f"
+												},
+												{
+													"name": "Closes case",
+													"id": "e0122e68-e40b-492d-8df9-08ad00fefa65",
+													"protocolProfileBehavior": {
+														"disableBodyPruning": true
+													},
+													"request": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"searches",
+																":searchId",
+																"cases",
+																":caseId",
+																"close"
+															],
+															"variable": [
+																{
+																	"key": "searchId",
+																	"value": "{{cases.searchId}}"
+																},
+																{
+																	"key": "caseId",
+																	"value": "{{cases.caseId}}"
+																}
+															]
+														},
+														"description": "This method let's you close the case."
+													},
+													"response": [
+														{
+															"id": "dbb32e3d-0728-4fc4-8a66-75fa3eca0cfc",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "OK",
+															"code": 200,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"post\",\n    \"duration\": \"<integer>\"\n  }\n}"
+														},
+														{
+															"id": "59afea99-d18c-484d-a18a-08b2a3b6b111",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Bad Request",
+															"code": 400,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "f74e52b2-47ee-450d-b22d-06e9fe0d547f",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Unauthorized",
+															"code": 401,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "fd257a38-e043-4931-ae39-5dff3b853bf6",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Forbidden",
+															"code": 403,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "56f19bee-cca1-4bbd-8c5f-2622f0a058fa",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Not Found",
+															"code": 404,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "62ebf0fc-978b-4107-a6c0-167d69f105ac",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Method Not Allowed",
+															"code": 405,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "60b29238-3aed-404e-ac9e-eccb91d9239b",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Precondition Failed",
+															"code": 412,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "831eb259-efbc-4a3a-9b9b-e50bbc6bc896",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Too Many Requests",
+															"code": 429,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "dcabf530-aa5c-46f8-a86e-10ec40260bb1",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Internal Server Error",
+															"code": 500,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "2e14e265-3f01-436a-9788-b0a7669c7656",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Bad Gateway",
+															"code": 502,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														},
+														{
+															"id": "4deb6d56-c57f-4fce-a80f-61817e76ad6d",
+															"name": "Untitled Example",
+															"originalRequest": {
+																"method": "POST",
+																"header": [
+																	{
+																		"key": "Accept",
+																		"value": "application/json"
+																	}
+																],
+																"url": {
+																	"raw": "{{baseUrl}}/searches/:searchId/cases/:caseId/close",
+																	"host": [
+																		"{{baseUrl}}"
+																	],
+																	"path": [
+																		"searches",
+																		":searchId",
+																		"cases",
+																		":caseId",
+																		"close"
+																	],
+																	"variable": [
+																		{
+																			"key": "searchId",
+																			"value": "{{cases.searchId}}"
+																		},
+																		{
+																			"key": "caseId",
+																			"value": "{{cases.caseId}}"
+																		}
+																	]
+																},
+																"description": "This method let's you close the case."
+															},
+															"status": "Service Unavailable",
+															"code": 503,
+															"_postman_previewlanguage": "json",
+															"header": [
+																{
+																	"key": "Content-Type",
+																	"value": "application/json"
+																}
+															],
+															"cookie": [],
+															"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+														}
+													]
+												}
+											],
+											"id": "71337710-1082-4de0-899a-8b45fdf07f05"
+										}
+									],
+									"id": "6d25732e-5f4a-4442-8e27-70df4c503c45"
+								}
+							],
+							"id": "82c28f39-1f32-43c3-80d3-755ba1c409f7"
+						}
+					],
+					"id": "2c400943-3a25-4fd4-824e-102369e85482"
+				}
+			],
+			"id": "9c2c0fc2-f69b-4497-b3ac-0fe8924f98b5"
+		},
+		{
+			"name": "results",
+			"item": [
+				{
+					"name": "{resultId}",
+					"item": [
+						{
+							"name": "replies",
+							"item": [
+								{
+									"name": "Replies to a message",
+									"id": "f42f03ec-79b9-429b-8f76-7d99288f871c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/x-www-form-urlencoded"
+											},
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"description": "(Required) Message content",
+													"key": "message",
+													"value": "{{result.message}}"
+												},
+												{
+													"description": "(Required) ConnectionId",
+													"key": "connectionId",
+													"value": "{{result.connectionId}}"
+												},
+												{
+													"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+													"key": "public",
+													"value": "{{result.public}}"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/results/:resultId/replies",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"results",
+												":resultId",
+												"replies"
+											],
+											"variable": [
+												{
+													"key": "resultId",
+													"value": "{{result.resultId}}"
+												}
+											]
+										},
+										"description": "This endpoint allows you to reply to a message"
+									},
+									"response": [
+										{
+											"id": "520742ab-b731-4f31-a041-9322f8fe9421",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"post\",\n    \"duration\": \"<integer>\"\n  }\n}"
+										},
+										{
+											"id": "45412730-05db-41c9-941f-80784de5f67c",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "b0cb1af5-49a3-4982-897f-b67c6f28537e",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "0c824ee7-6b12-4971-b4b6-6e11a793d48e",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "bf39101e-db1d-480f-9fe2-9e5eada41e61",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "3176a38f-e64f-4b22-97f4-5c3aadce2c96",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Method Not Allowed",
+											"code": 405,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "3bc4ab19-0f71-4f46-b630-1c37a8938963",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Precondition Failed",
+											"code": 412,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "24519181-8f21-4890-9679-0446827a40b9",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Too Many Requests",
+											"code": 429,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "a5a983fe-4ea1-4fe6-bf25-d01b15617af8",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "59e43c58-e63a-4c3c-a2d9-92d755bb4697",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Bad Gateway",
+											"code": 502,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "dbff04cb-388b-4972-8e2f-9985656a9177",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/x-www-form-urlencoded"
+													},
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "urlencoded",
+													"urlencoded": [
+														{
+															"description": "(Required) Message content",
+															"key": "message",
+															"value": "{{result.message}}"
+														},
+														{
+															"description": "(Required) ConnectionId",
+															"key": "connectionId",
+															"value": "{{result.connectionId}}"
+														},
+														{
+															"description": "(Required) Set `public=false` if you want to reply private to a public message.",
+															"key": "public",
+															"value": "{{result.public}}"
+														}
+													]
+												},
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/replies",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"replies"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "This endpoint allows you to reply to a message"
+											},
+											"status": "Service Unavailable",
+											"code": 503,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "32fad86e-023a-4a8b-97e0-4789d31f52f8"
+						},
+						{
+							"name": "noContext",
+							"item": [
+								{
+									"name": "Retrieves results without context",
+									"id": "d7b7ec89-7a6a-45e0-abc7-4cfb2f61de58",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/results/:resultId/noContext",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"results",
+												":resultId",
+												"noContext"
+											],
+											"variable": [
+												{
+													"key": "resultId",
+													"value": "{{result.resultId}}"
+												}
+											]
+										},
+										"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+									},
+									"response": [
+										{
+											"id": "60ba48b0-ef30-4adf-b0cd-bc014b40d180",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"get\",\n    \"duration\": \"<integer>\"\n  }\n}"
+										},
+										{
+											"id": "d94ecb59-8a56-41d6-9589-7313a9116ca2",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "a60aef2d-33ea-4115-bfe7-34fbebd28177",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "56d48c32-01c7-4799-b1bc-5d37e5954799",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "639f818b-d171-4122-a261-7d18cbeae5d1",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "33bbefd5-4704-495a-81c0-56c4a271cb82",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Method Not Allowed",
+											"code": 405,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "97ce6814-9d0b-4e57-8f59-79519fdfb675",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Precondition Failed",
+											"code": 412,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "18172581-6da5-409b-9d44-04144f621f2b",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Too Many Requests",
+											"code": 429,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "7c333c19-9be4-47ff-be79-909004adaa5a",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "768c508c-24d1-4f54-af81-f3172df2b023",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Bad Gateway",
+											"code": 502,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "e317f661-aa86-46c1-bdba-18262ea2b659",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/noContext",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"noContext"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														}
+													]
+												},
+												"description": "Retrieves information for 1 specific `resultId`. Retrieves all information for a result object."
+											},
+											"status": "Service Unavailable",
+											"code": 503,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "69346731-5fe6-4201-aeba-daa7757f0364"
+						},
+						{
+							"name": "event",
+							"item": [
+								{
+									"name": "{event}",
+									"item": [
+										{
+											"name": "Message events",
+											"id": "30dfd06f-4ebd-4b18-8ab4-2a4e08dd1d2e",
+											"protocolProfileBehavior": {
+												"disableBodyPruning": true
+											},
+											"request": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:resultId/event/:event",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":resultId",
+														"event",
+														":event"
+													],
+													"variable": [
+														{
+															"key": "resultId",
+															"value": "{{result.resultId}}"
+														},
+														{
+															"key": "event",
+															"value": "{{result.event}}"
+														}
+													]
+												},
+												"description": "Start or stop typing on a message. Open or close a message.\n"
+											},
+											"response": [
+												{
+													"id": "0194a5d7-db83-4b7d-9fe2-f7e9759d33b0",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"post\",\n    \"duration\": \"<integer>\"\n  }\n}"
+												},
+												{
+													"id": "6699a689-8963-4d1e-8543-58c3a61c5d81",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Bad Request",
+													"code": 400,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "f46bbc08-edf2-412b-a281-86b24ff4b6a1",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Unauthorized",
+													"code": 401,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "001ee0c3-1404-4e53-bf07-8ff4702df52f",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Forbidden",
+													"code": 403,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "74cb0992-9e10-4ab9-a701-5dfa6e345c08",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Not Found",
+													"code": 404,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "20394428-10f4-4f97-b30a-346a43904e6c",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Method Not Allowed",
+													"code": 405,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "d4b8e147-be54-422a-9328-85414e5c5642",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Precondition Failed",
+													"code": 412,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "33f280ad-59d4-4105-ba45-fc0c8f8875cc",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Too Many Requests",
+													"code": 429,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "93c34f55-4c0d-4f27-9063-f65742faeb03",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Internal Server Error",
+													"code": 500,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "cac80710-45e6-416b-b584-964ddf0af0c7",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Bad Gateway",
+													"code": 502,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												},
+												{
+													"id": "fe528761-aa68-474c-b86a-d6d8f52ed8d5",
+													"name": "Untitled Example",
+													"originalRequest": {
+														"method": "POST",
+														"header": [
+															{
+																"key": "Accept",
+																"value": "application/json"
+															}
+														],
+														"url": {
+															"raw": "{{baseUrl}}/results/:resultId/event/:event",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"results",
+																":resultId",
+																"event",
+																":event"
+															],
+															"variable": [
+																{
+																	"key": "resultId",
+																	"value": "{{result.resultId}}"
+																},
+																{
+																	"key": "event",
+																	"value": "{{result.event}}"
+																}
+															]
+														},
+														"description": "Start or stop typing on a message. Open or close a message.\n"
+													},
+													"status": "Service Unavailable",
+													"code": 503,
+													"_postman_previewlanguage": "json",
+													"header": [
+														{
+															"key": "Content-Type",
+															"value": "application/json"
+														}
+													],
+													"cookie": [],
+													"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+												}
+											]
+										}
+									],
+									"id": "b65ad9a7-914f-4628-b01a-239b91e7e1ca"
+								}
+							],
+							"id": "d931f5b2-9e9c-46f6-9767-2353fa7a087e"
+						}
+					],
+					"id": "220f641f-082e-4db3-861f-1ba439e650ac"
+				},
+				{
+					"name": "{profilename}",
+					"item": [
+						{
+							"name": "source:{media}",
+							"item": [
+								{
+									"name": "Result",
+									"id": "70e4fa62-0d03-4f94-8462-ec956ad6843c",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"results",
+												":profilename",
+												"source:{{result.media}}"
+											],
+											"variable": [
+												{
+													"key": "profilename",
+													"value": "{{result.profilename}}"
+												}
+											]
+										},
+										"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+									},
+									"response": [
+										{
+											"id": "935ffc44-2fd3-4d08-b901-dd5197ea3a42",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"get\",\n    \"duration\": \"<integer>\"\n  }\n}"
+										},
+										{
+											"id": "ec5d8b99-dce5-4d19-b386-3d75f34d3ec7",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "ccdd22b3-9f71-411f-8457-6972d215bc95",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Unauthorized",
+											"code": 401,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "b3a34fe2-28fc-4cfa-b6e1-c9d54cc8cda6",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Forbidden",
+											"code": 403,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "a715fbaf-3e8b-4d92-b212-c834d2c8666d",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "207565aa-18bd-421a-9d3f-8f564d6aad2e",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Method Not Allowed",
+											"code": 405,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "8bdbd65c-d5d5-4155-acfe-2bfe4e778e5b",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Precondition Failed",
+											"code": 412,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "8c32276a-0fd3-40e9-8c45-4d7aaf4816ac",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Too Many Requests",
+											"code": 429,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "eedc0b60-f9c2-4154-9108-b88d546fc12d",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Internal Server Error",
+											"code": 500,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "62d1bba1-8fb4-4ed2-8082-a740c87e5d91",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Bad Gateway",
+											"code": 502,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										},
+										{
+											"id": "2406c6f0-8384-46cc-9b67-b5b40c320af3",
+											"name": "Untitled Example",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/results/:profilename/source:{{result.media}}",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"results",
+														":profilename",
+														"source:{{result.media}}"
+													],
+													"variable": [
+														{
+															"key": "profilename",
+															"value": "{{result.profilename}}"
+														}
+													]
+												},
+												"description": "Use filters to retrieve results. You need to add the `profilename` and the `media`. If you are in the Traceboard dashboard, you can find the string with filters in the URL. All filters can be used within the string.\n\nExample URL: `/test-profile/source:twitter/word:aloha/`\n\n**media**\n\n- twitter \n- facebook\n- instagram\n- google+plus\n- linkedin\n- whatsapp \n- blogs\n- forums\n- news\n- web\n- print\n- rtv\n- irischat\n"
+											},
+											"status": "Service Unavailable",
+											"code": 503,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+										}
+									]
+								}
+							],
+							"id": "458c0c5d-42f3-4eb7-b31e-d628a3b6badd"
+						}
+					],
+					"id": "24fb031d-12cc-4fcd-855c-ea0c98656718"
+				}
+			],
+			"id": "8a05683b-df87-46fa-ba9c-ccb9b47b6359"
+		},
+		{
+			"name": "configuration",
+			"item": [
+				{
+					"name": "Configuration",
+					"id": "19a26550-a20a-4721-a21e-deb6ff72c61e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/configuration",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"configuration"
+							]
+						},
+						"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+					},
+					"response": [
+						{
+							"id": "cbdf91de-5e53-4cd2-89e1-f6bdf13bd534",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"data\": {},\n  \"status\": \"SUCCES\",\n  \"metadata\": {\n    \"values\": {\n      \"url\": \"<integer>\"\n    },\n    \"method\": \"get\",\n    \"duration\": \"<integer>\"\n  },\n  \"configuration\": {\n    \"lastChange\": \"<string>\",\n    \"globals\": {\n      \"sources\": {},\n      \"activities\": {},\n      \"statusses\": {}\n    },\n    \"format\": \"<string>\",\n    \"duration\": \"<integer>\",\n    \"account\": {\n      \"memberId\": \"<string>\",\n      \"company\": \"<string>\",\n      \"memberSince\": \"<string>\",\n      \"standaardZoekopdracht\": \"<string>\",\n      \"users\": {},\n      \"searches\": {},\n      \"connections\": {},\n      \"categoriesAndLabels\": {},\n      \"currentUser\": {},\n      \"monitoring\": \"<string>\",\n      \"result\": \"<integer>\",\n      \"analysis\": \"<string>\",\n      \"reports\": \"<string>\",\n      \"engagement\": \"<string>\",\n      \"tbmessenger\": \"<string>\",\n      \"presenter\": \"<string>\",\n      \"publisher\": \"<string>\",\n      \"qmModule\": \"<string>\",\n      \"fbInsights\": \"<string>\",\n      \"chatModule\": \"<string>\",\n      \"personView\": \"<string>\",\n      \"rss\": \"<string>\",\n      \"webcareTable\": \"<string>\",\n      \"iframe\": \"<string>\",\n      \"supportButton\": \"<string>\",\n      \"workflowModule\": \"<string>\",\n      \"webcareMagicModule\": \"<string>\",\n      \"qm\": \"<string>\",\n      \"timezone\": \"<string>\",\n      \"defaultCountry\": \"<string>\",\n      \"disableAccount\": \"<boolean>\"\n    }\n  }\n}"
+						},
+						{
+							"id": "81bbd091-e643-445e-8c9a-ca430bfd5ee2",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "075c41c6-cb63-49c0-b666-bf02dd7715ff",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "9771223c-ae87-46f2-973e-9db3f14b90c9",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "068c3678-8c35-4ce0-acce-2c071a6bcd21",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "7f3660dd-46a0-48b0-89cc-62a54b5df42f",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "3411a1c8-046a-40e3-9069-2ff589691cb1",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Precondition Failed",
+							"code": 412,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "00b0897c-84e1-489d-98c7-89810bb5dfe9",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Too Many Requests",
+							"code": 429,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "b6e434c3-96bf-444b-97fd-39dc5e5a5f86",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "ad6b2e08-86e3-42c1-b916-34aa2a6313f3",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Bad Gateway",
+							"code": 502,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						},
+						{
+							"id": "bdeb7419-dc70-4473-9f2f-2f5be07c4f30",
+							"name": "Untitled Example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/configuration",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"configuration"
+									]
+								},
+								"description": "The configuration contains a lot of information about the current account. Available searches, social media connections, users, etc., and some default parameters that help you understand some of the integers we return."
+							},
+							"status": "Service Unavailable",
+							"code": 503,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"info\": \"<string>\",\n  \"message\": \"<string>\",\n  \"name\": \"<string>\",\n  \"status\": \"<string>\",\n  \"transactionId\": \"<string>\"\n}"
+						}
+					]
+				}
+			],
+			"id": "21af9db4-12c1-4880-be11-97d62d8b359c"
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "client_authentication",
+				"value": "body",
+				"type": "string"
+			},
+			{
+				"key": "clientSecret",
+				"value": "{{client_secret}}",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_id}}",
+				"type": "string"
+			},
+			{
+				"key": "accessTokenUrl",
+				"value": "https://api-prd.kpn.com/oauth/client_credential/accesstoken?grant_type=client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "access_token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "client_credentials",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "9b6c4675-c3af-41ed-ac60-bbddc4298e4a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "9a7fce99-9c8b-4984-beca-1c16b9ffcea2",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "97341436-45f1-46f4-834c-9109f2d479cf",
+			"key": "baseUrl",
+			"value": "https://api-prd.kpn.com/communication/tracebuzz/social-media-webcare"
+		},
+		{
+			"id": "07b1b023-c9ee-4345-8ee3-77a1d9cb0147",
+			"key": "client_id",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "ed6f84f0-9bf5-4b6e-a191-2b95fb77ffc2",
+			"key": "client_secret",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "547960b9-a14b-4cfa-a7ec-9abd2eeca986",
+			"key": "cases.searchId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "c3d3debd-ad0b-4af1-bb7f-527b382b3949",
+			"key": "cases.caseId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "8226c268-7a54-45e0-881f-d16fa8a1043b",
+			"key": "cases.handlerId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "7f094808-366c-4aa7-8536-f59757670bcb",
+			"key": "result.message",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "6329e7e8-2b96-4903-95cd-4fa22ff3c6e6",
+			"key": "result.connectionId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "c3c3d634-06ca-4e04-a56c-5b7fde7db3a9",
+			"key": "result.media",
+			"value": ""
+		},
+		{
+			"id": "5f4c4199-91bd-4670-af3e-b0f9b538bee3",
+			"key": "result.public",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "294d1ee5-aec4-478d-9d2c-0f4e93d36810",
+			"key": "result.resultId",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"id": "d7a5f883-5156-40d7-8064-a75ba483103d",
+			"key": "result.event",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
